@@ -12,40 +12,40 @@
 
 ## REST API server
 
-GET '/api/visitator/cars' 
+-GET '/api/visitator/cars' 
 Request Parameters: None
 Response Body: List of all cars grouped by Model
-GET '/api/visitator/categories'
-Request Parameters: None
+-GET '/api/visitator/categories'
+-Request Parameters: None
 Response Body: List of all categories
-GET '/api/visitator/brands'
+-GET '/api/visitator/brands'
 Request Parameters: None
 Response Body: List of all Brands
-POST '/api/login'
+-POST '/api/login'
 Request Parameters: Username and Password 
 Response Body:	It return the encrypted password of the user for authentication
-POST '/api/logout'
+-POST '/api/logout'
 Request Parameters: None
 Response Body: None
-GET '/api/user/cars' 
+-GET '/api/user/cars' 
 Request Parameters: None
 Response Body: List of all cars (not grouped by Model)
-GET '/api/user/rentals'
+-GET '/api/user/rentals'
 Request Parameters: None
 Response Body: List of all rentals, to check available cars
-GET 'api/userRental/:username'
+-GET 'api/userRental/:username'
 Request Parameters: Username
 Response Body: It return the number of past rentals of the user
-GET '/api/carForC'
+-GET '/api/carForC'
 Request Parameters: none
 Response Body: List with number of cars for each categories
-GET '/api/allRentalofUser/:username'
+-GET '/api/allRentalofUser/:username'
 Request Parameters: Username
 Response Body: It return list of all rentals (past and future) of the user
-DELETE '/api/userRentalDelete/:idCar/:username/:beginDate/:endDate' 
+-DELETE '/api/userRentalDelete/:idCar/:username/:beginDate/:endDate' 
 Request Parameters: idCar, username, Beggining and End Date of a future rental of the user
 Response Body: None               
-POST '/api/userRental/insert'
+-POST '/api/userRental/insert'
 Request Parameters: Username, IdCar, Beginning and End Date of a new Rental after Payment validation
 Response Body: Result of the operation
 
@@ -57,9 +57,7 @@ Response Body: Result of the operation
 
 ## Main React Components
 
-- `ListOfSomething` (in `List.js`): component purpose and main functionality
 
-- `GreatButton` (in `GreatButton.js`): component purpose and main functionality
 
 - Navbar.js : Navbar still present in visitator and user mode, it show LogIn form in first case or a "Welocme Username" Badge with a LogOut Button
 
